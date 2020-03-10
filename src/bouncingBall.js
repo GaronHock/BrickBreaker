@@ -1,1 +1,0 @@
-//Kill bricks with this.Also a MovingObject subclass.
