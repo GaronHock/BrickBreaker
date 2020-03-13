@@ -4,7 +4,8 @@ class Paddle{
     this.rectangleY = 570;
     this.rectangleWidth = 100;
     this.rectangleHeight = 25;
-    this.color = "red";
+    this.color = "#2e3548";
+    this.strokeStyle= "#ffcd05"
     this.context = context;
   }
 
@@ -13,6 +14,7 @@ class Paddle{
      this.context.beginPath();
      this.context.rect(this.rectangleX, this.rectangleY, this.rectangleWidth, this.rectangleHeight);
      this.context.fillStyle = this.color;
+     this.context.strokeStyle = this.strokeStyle;
      this.context.fill();
      this.context.stroke();
   }

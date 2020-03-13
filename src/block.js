@@ -7,26 +7,10 @@ class Block{
     this.context = context;
     this.shown = true;
 
-
-    // this.blockX = 50;
-    // this.blockY = 30;
-    // this.blockWidth = 50;
-    // this.blockHeight = 50;
-    // this.context = context;
-  
 }
 draw(){
     this.context.beginPath();
     this.context.rect(this.blockX, this.blockY, this.blockWidth, this.blockHeight);
-    // if (this.blockX >= 500) {
-    //   this.blockX = 0;
-    //   this.blockY += this.blockHeight;
-    // }
-    //   i += 1
-    // this.blockX += this.blockWidth;
-
-
-    
     function get_random_color() {
       function c() {
         var hex = Math.floor(Math.random() * 256).toString(16);

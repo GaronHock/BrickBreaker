@@ -1,7 +1,7 @@
 //import paddle from './paddle';
 class Ball{
   constructor(context, paddle, blockArray){
-  this.radius = 30;
+  this.radius = 15;
   this.ballX = 300;
   this.ballY = 300;
   this.color = "red";
@@ -10,6 +10,8 @@ class Ball{
   this.context = context;
   this.paddle = paddle;
   this.blockArray = blockArray;
+  this.score = 0;
+  this.font = 'bold 20px Open Sans'
   }
 
   
@@ -21,7 +23,11 @@ class Ball{
     this.context.fillStyle = this.color;
     this.context.fill();
     this.context.lineWidth = 5;
-    this.context.stroke();
+    this.context.stroke()
+
+    this.context.font = this.font;
+    this.context.textAlign = 'center';
+    this.context.fillText('Score: ' + this.score, 450, 30)
   }
 
   startMoving() {
@@ -43,7 +49,7 @@ class Ball{
   }
   collision() {
     if (this.ballX - this.radius + (this.radius / 1.25) < + this.radius / 2 && this.ballXVelocity < 0) {
-      this.ballXVelocity = -this.ballXVelocity;
+      this.ballXVelocity = -this.ballXVelocity
     }
     if (this.ballX + this.radius + (this.radius / 1.25) > 600 +  this.radius && this.ballXVelocity > 0) {
       this.ballXVelocity = -this.ballXVelocity;
@@ -59,18 +65,22 @@ class Ball{
       this.ballYVelocity = - this.ballYVelocity;
     }
 
-    // for(let i = 0; i < this.blockArray.length; i++){
-    //   console.log(this.blockArray[i]);
-    //   debugger;
-    // }
 
     [].concat(...this.blockArray).forEach(block =>{
       if((this.ballX > block.blockX) && this.ballX < block.blockX + block.blockWidth
-      && this.ballY > block.blockY && this.ballY < block.blockY + block.blockHeight && this.ballYVelocity !== 0 &&
+      && this.ballY  - this.radius < block.blockY + block.blockHeight && this.ballYVelocity !== 0 &&
       block.shown ){
-  
+        
         block.shown = false;
+        this.score += 1;
         this.ballYVelocity = -this.ballYVelocity;
+        
+      }
+
+      if(this.score === 40){
+        this.context.font = this.font;
+        this.context.textAlign = 'center';
+        this.context.fillText("Game over!!!", 300, 300)
       }
 
     });
