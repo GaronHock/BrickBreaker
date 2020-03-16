@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" type='text/css' href="./stylesheets/styles.css">
   <title>Document</title>
 </head>
 <body>
   <h1>Canvas</h1>
-  <canvas id="my-canvas" width = "600" height = "600"style="background: black"></canvas>
+    <div id="start-page-div">
+      <button id="start-button">Click to start </button>
+    </div>
+    <div id="game-over-div">
+      
+    </div>
+  <canvas id="my-canvas" width="600" height="600" 
+  style="background: black; display: none; border: 1px solid red">
+  </canvas>
     <script src="./dist/main.js"></script>
     <script src="./vendor/keymaster.js"></script>
 </body>

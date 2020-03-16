@@ -13,8 +13,6 @@ class Ball{
   this.score = 0;
   this.font = 'bold 20px Open Sans'
   }
-
-  
   draw() {
     this.ballX += this.ballXVelocity;
     this.ballY += this.ballYVelocity;
@@ -24,7 +22,6 @@ class Ball{
     this.context.fill();
     this.context.lineWidth = 5;
     this.context.stroke()
-
     this.context.font = this.font;
     this.context.textAlign = 'center';
     this.context.fillText('Score: ' + this.score, 450, 30)
@@ -70,21 +67,16 @@ class Ball{
       if((this.ballX > block.blockX) && this.ballX < block.blockX + block.blockWidth
       && this.ballY  - this.radius < block.blockY + block.blockHeight && this.ballYVelocity !== 0 &&
       block.shown ){
-        
         block.shown = false;
         this.score += 1;
-        this.ballYVelocity = -this.ballYVelocity;
-        
+        this.ballYVelocity = -this.ballYVelocity;       
       }
-
       if(this.score === 40){
         this.context.font = this.font;
         this.context.textAlign = 'center';
         this.context.fillText("Game over!!!", 300, 300)
       }
-
     });
-
   }
 }
 

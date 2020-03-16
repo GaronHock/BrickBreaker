@@ -6,7 +6,6 @@ class Block{
     this.blockHeight = 50;
     this.context = context;
     this.shown = true;
-
 }
 draw(){
     this.context.beginPath();
@@ -24,42 +23,11 @@ draw(){
     }
 }
 
-
-
-
 export default Block;
 
 
 
-// let blockX = 50;
-// let blockY = 30;
-// let blockWidth = 50;
-// let blockHeight = 50;
 
-  // const array = []
-  // let i = 0
-  // const squareObject = {}
-  // while(i < 40){
-  //   context.beginPath();
-  //   context.rect(blockX, blockY, blockWidth, blockHeight);
-  //     function get_random_color() {
-  //       function c() {
-  //         var hex = Math.floor(Math.random() * 256).toString(16);
-  //         return ("0" + String(hex)).substr(-2); 
-  //       }
-  //       return "#" + c() + c() + c();
-  //     }
-  //   context.fillStyle = get_random_color();
-  //   context.fill();
-  //   context.stroke();
-  //   Object.assign(squareObject, context);
-  //     if (blockX >= 500) {
-  //       blockX = 0;
-  //       blockY += blockHeight;
-  //     }
-  //   i += 1
-  //   blockX += blockWidth;
-  // }
 
 
 

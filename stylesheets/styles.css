@@ -1,0 +1,32 @@
+body{
+  
+ background-color: #923cb5;
+ background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#start-page-div{
+background-image: url("https://s3.envato.com/files/203298159/Neon_Disco_Ball_2_Screen.jpg");
+ background-position:center;
+ background-size: cover;
+  height: 600px;
+  width: 600px;
+}
+
+
+#start-button{
+  color: red;
+}
+
+
+#game-over-div{
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
