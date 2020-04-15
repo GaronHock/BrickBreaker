@@ -7,13 +7,20 @@ body{
   align-items: center;
   height: 710px;
 }
+#contact-game-wrapper{
+  display: flex;
+    flex-direction: row;
+}
+#brick-breaker-header{
+  position: relative;
+    left: 8%;
+}
 #contact-div{
-  height: 600px;
+height: 600px;
     width: 200px;
     border: 1px solid;
-    position: fixed;
-    right: 80%;
-    top: 12%;
+    position: relative;
+    right: 10%;
 }
 #start-page-div{
 background-image: url("https://s3.envato.com/files/203298159/Neon_Disco_Ball_2_Screen.jpg");
