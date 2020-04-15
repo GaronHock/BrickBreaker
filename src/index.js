@@ -19,9 +19,9 @@ document.getElementById("start-button").addEventListener("click", ()=>{
   //block.drawBlocks();
 
   const bricksArray = [] ///CREATING ARRAY OF BRICK INSTANCES
-  for(let i = 0; i < 4; i++){
+  for (let i = 0; i < 4; i++){
     const rowArray = [];
-    for(let j = 0; j < 10; j++){
+    for (let j = 0; j < 10; j++){
       rowArray.push(new Block(context, 50 * (j + 1), 50 * (i + 1)))
     }
     //ABOVE I AM USING THE INDEX OF J AND I TO ALSO CHANGE THE POSITIONING OF THE 
