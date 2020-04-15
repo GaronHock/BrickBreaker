@@ -22,6 +22,9 @@ height: 600px;
     position: relative;
     right: 10%;
 }
+#link{
+  display: flex;
+}
 #start-page-div{
 background-image: url("https://s3.envato.com/files/203298159/Neon_Disco_Ball_2_Screen.jpg");
  background-position:center;
