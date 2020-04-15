@@ -13,17 +13,39 @@ body{
 }
 #brick-breaker-header{
   position: relative;
-    left: 8%;
 }
 #contact-div{
-height: 600px;
+    height: 200px;
     width: 200px;
     border: 1px solid;
-    position: relative;
-    right: 10%;
+    position: fixed;
+    left: 5%;
+    border-radius: 2%;
 }
-#link{
-  display: flex;
+#single-contact-link-wrapper{
+display: flex;
+    background-color: black;
+    position: relative;
+    color: purple;
+    height: 50px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#creator-favicon-links{
+  font-weight: 400;
+    color: red;
+    position: relative;
+    right: 20%;
+        text-decoration: none;
+}
+#text{
+  font-weight: bold;
+    color: white;
+    position: relative;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 #start-page-div{
 background-image: url("https://s3.envato.com/files/203298159/Neon_Disco_Ball_2_Screen.jpg");
