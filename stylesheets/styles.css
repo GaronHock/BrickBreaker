@@ -6,6 +6,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 710px;
 }
 #start-page-div{
 background-image: url("https://s3.envato.com/files/203298159/Neon_Disco_Ball_2_Screen.jpg");
