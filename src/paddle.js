@@ -22,7 +22,7 @@ class Paddle{
   movePaddle(){
     if (key.isPressed("left") && this.rectangleX > 0) {
       //console.log(rectangleX)
-   //   console.log(canvas.width)
+      //console.log(canvas.width)
       this.rectangleX -= 250 / 70;
     }
 

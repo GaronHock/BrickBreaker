@@ -14,8 +14,7 @@ document.getElementById("start-button").addEventListener("click", ()=>{
   ///SET UP GAME LOOP CALLS IT EVERY THIRTIETH OF A SECOND
 
   const paddle = new Paddle(context); ///SETTING UP PADDLE INSTANCE
-//  const block = new Block(context);
-
+// const block = new Block(context);
   //block.drawBlocks();
 
   const bricksArray = [] ///CREATING ARRAY OF BRICK INSTANCES
@@ -58,15 +57,15 @@ document.getElementById("start-button").addEventListener("click", ()=>{
   //CALLING THE FUNCTION AND CLEARING CANVAS EVERYTIME IT IS CALLED
 
    function update() {
-     console.log(ball.ballX)
+    console.log(ball.ballX)
     context.clearRect(0, 0, canvas.width, canvas.height);
     ball.draw();
     paddle.draw();
     drawBlocks();
     paddle.movePaddle();
     ball.collision();
-     if (ball.ballY > 600) {
-       clearInterval(refreshIntervalId);
-     }
+    if (ball.ballY > 600) {
+      clearInterval(refreshIntervalId);
+    }
   }
 })

@@ -65,7 +65,8 @@ class Ball{
 
     [].concat(...this.blockArray).forEach(block =>{
       if((this.ballX > block.blockX) && this.ballX < block.blockX + block.blockWidth
-      && this.ballY  - this.radius < block.blockY + block.blockHeight && this.ballYVelocity !== 0 &&
+      && this.ballY  - this.radius < block.blockY + block.blockHeight 
+      && this.ballYVelocity !== 0 &&
       block.shown ){
         block.shown = false;
         this.score += 1;
